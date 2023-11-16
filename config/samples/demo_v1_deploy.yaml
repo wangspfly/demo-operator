@@ -1,0 +1,13 @@
+apiVersion: demo.wsp.com/v1
+kind: Deploy
+metadata:
+  labels:
+    app.kubernetes.io/name: deploy
+    app.kubernetes.io/instance: deploy-sample
+    app.kubernetes.io/part-of: demo-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: demo-operator
+  name: deploy-sample
+spec:
+  namespace: test
+  path: /home/demo
